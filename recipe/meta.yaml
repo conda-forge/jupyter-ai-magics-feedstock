@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_ai_magics-{{ version }}.tar.gz
-  sha256: cfc54c74345757602dc21ad87e3e05d39742ec58182cf6f55c81e602592853ae
+  sha256: a5b4bf94fe0b668cc22b79fda01ba994e62b98de0e1f99b8be7fb600fe7d4df4
 
 build:
   noarch: python
