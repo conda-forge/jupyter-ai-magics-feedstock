@@ -1,5 +1,5 @@
 {% set name = "jupyter-ai-magics" %}
-{% set version = "2.9.1" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_ai_magics-{{ version }}.tar.gz
-  sha256: 6542ccb0501fc5b2e7150969fb6a6dc16a1e47808b162f2510ead3f4e146d8a6
+  sha256: 0d7c3c97446457bb172728990068e9865b88b71f74e616a7a24d53c52ca7d07d
 
 build:
   noarch: python
@@ -26,8 +26,6 @@ requirements:
     - ipython
     - importlib-metadata >=5.2.0
     - langchain >=0.1.0,<0.2.0
-    - langchain-community >0.0.8,<=0.1.0
-    - langchain-core >0.1.6,<=0.2.0
     - typing-extensions >=4.5.0
     - click >=8.0,<9.dev0
     - jsonpath-ng >=1.5.3,<2
