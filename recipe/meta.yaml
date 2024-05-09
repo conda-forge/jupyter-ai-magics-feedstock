@@ -1,5 +1,5 @@
 {% set name = "jupyter-ai-magics" %}
-{% set version = "2.14.1" %}
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_ai_magics-{{ version }}.tar.gz
-  sha256: ff8faa9f4d4c3884411e6c87f7e28b7fbde155fd6082be872050452e8554e84d
+  sha256: 46024f38870bdcf4a41bf080aad1f305c8f8980819a90688d9b3849492708571
 
 build:
   noarch: python
