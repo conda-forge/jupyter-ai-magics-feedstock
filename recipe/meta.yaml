@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_ai_magics-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyter_ai_magics-{{ version }}.tar.gz
   sha256: 4e03f2001818d83a4ce8a025d0a07673769e03a5e5e5ab1f1478bba540432866
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling >=1.4.0
     - hatch-nodejs-version
     - pip
     - hatch-jupyter-builder
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - ipython
     - importlib-metadata >=5.2.0
     - langchain >=0.2.17,<0.3.0
@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: Jupyter AI magic commands
