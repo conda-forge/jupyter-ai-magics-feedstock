@@ -144,7 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@3coins](https://github.com/3coins/)
-* [@JasonWeill](https://github.com/JasonWeill/)
 * [@andrii-i](https://github.com/andrii-i/)
 * [@dlqqq](https://github.com/dlqqq/)
+* [@srdas](https://github.com/srdas/)
 
