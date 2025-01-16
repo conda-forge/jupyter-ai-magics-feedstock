@@ -25,11 +25,12 @@ requirements:
     - python >={{ python_min }}
     - ipython
     - importlib-metadata >=5.2.0
-    - langchain >=0.2.17,<0.3.0
-    - langchain-community >=0.2.19,<0.3.0
     - typing-extensions >=4.5.0
     - click >=8.0,<9.dev0
     - jsonpath-ng >=1.5.3,<2
+    - langchain >=0.3.0,<0.4.0
+    - langchain-community >=0.3.0,<0.4.0
+    - pydantic >=2.0,<3.0
 
 test:
   imports:
